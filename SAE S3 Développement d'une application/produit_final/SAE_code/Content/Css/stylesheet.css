@@ -1,0 +1,561 @@
+/* STYLE FONTS */
+@font-face { font-family: "Montserrat"; src: url('../Fonts/Montserrat-Regular.ttf'); } /* Corps de texte */
+@font-face { font-family: "WorkSans"; src: url('../Fonts/WorkSans-Regular.ttf'); } /* Titres/sous-titres/accroches */
+
+/* TAILLE FONTS */
+:root{
+  --police_lien: 12px;
+  --police_label: 15px;
+  --police_bouton: 18px;
+  --police_titre: 25px;
+  --police_texte: 20px;
+}
+
+/* COULEURS */
+:root{
+  --bleu_primaire: #293358;
+  --or_primaire:#8b7d6d;
+  --blanc:#ffffff;
+  --bleu_secondaire:#354878;
+  --or_secondaire:#ad947e;
+}
+
+/* FORMULAIRES */
+:root{
+  --bord_form: 20px;
+  --marge_form: 35px;
+}
+
+/* BOUTONS */
+:root{
+  --bord_btn: 5px;
+  --marge_btn: 20px;
+}
+
+/* RESPONSIVE : petits écrans (téléphones) */
+@media only screen and (max-width: 575px){
+  div.form_co {
+    width: 100%; /* Ajuster la largeur pour les petits écrans */
+    margin: 10px; /* Ajouter une petite marge autour du formulaire */
+    padding: 15px; /* Ajouter du rembourrage pour un meilleur espacement */
+  }
+}
+
+/* RESPONSIVE : écrans moyens (tablettes) */
+@media only screen and (min-width: 576px){
+  div.form_co {
+    width: 80%; /* Ajuster la largeur pour les écrans moyens */
+  }
+}
+
+/* RESPONSIVE : grands écrans (ordinateurs) */
+@media only screen and (min-width: 992px){
+  div.form_co {
+    width: 60%; /* Ajuster la largeur pour les écrans de grande taille */
+  }
+}
+
+/* Utilisé sur plusieurs pages */
+.bouton{
+  background-color : var(--or_secondaire);
+  color: var(--blanc);
+  height: 45px;
+  width: 100%;
+  font-size: var(--police_bouton);
+  text-align: center;
+  border: none;
+  border-radius: var(--bord_btn); /* Arrondir les bords */
+  font-family: 'WorkSans';
+}
+
+.bouton:hover{
+  background-color: var(--or_primaire);
+}
+
+.bouton_v2{
+  background-color : var(--or_secondaire);
+  color: var(--blanc);
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: var(--police_bouton);
+  text-align: center;
+  border: none;
+  border-radius: var(--bord_btn); /* Arrondir les bords */
+  font-family: 'WorkSans';
+}
+
+.bouton_v2:hover{
+  background-color: var(--or_primaire);
+}
+
+.bouton_v3{
+  background-color : var(--or_secondaire);
+  color: var(--blanc);
+  height: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: var(--police_bouton);
+  text-align: center;
+  border: none;
+  border-radius: var(--bord_btn); /* Arrondir les bords */
+  font-family: 'WorkSans';
+}
+
+.bouton_v3:hover{
+  background-color: var(--or_primaire);
+}
+
+.text{
+  color: var(--blanc);
+  letter-spacing: 2px;
+  font-size: var(--police_texte);
+  font-family: 'Montserrat';
+}
+
+div#cont_case{
+  background-color: var(--bleu_primaire);
+  text-align: center;
+  border-radius: var(--bord_form); 
+  padding: 35px;
+  width: 80%; /* Ajuster le cadre */
+  height: auto; /* Ajuster automatiquement la hauteur en fonction du contenu */
+  margin-top: 40px; 
+  margin-bottom: 40px;
+}
+
+div#cont_case2 {
+  background-color: var(--bleu_primaire);
+  text-align: center;
+  border-radius: var(--bord_form); 
+  padding: 35px;
+  width: 900px; 
+  height: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  float: center; 
+}
+
+.white{
+  color: var(--blanc);
+}
+
+/* Début CSS de view_begin.php */
+body.base{
+  background-color: var(--bleu_secondaire);
+}
+
+div.container-fluid {
+  max-width: auto;
+}
+
+a.navbar_logo img{
+  max-width: 195px;
+  max-height: 90px;
+}
+
+nav.bg-or-primaire{
+  background-color: var(--or_primaire);
+}
+
+.navbar-nav .nav-link{
+  color: var(--blanc);
+  letter-spacing: 2px;
+  font-size: var(--police_label);
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.navbar-nav a.nav-link.active{
+  color:var(--blanc); /* Elements de la navigation en blanc */
+}
+
+.navbar-nav a.nav-link.active:hover{
+  color: var(--bleu_secondaire); /* Bleu au survol */
+}
+
+.navbar-nav .nav-link:hover{
+  color: var(--bleu_secondaire); /* Bleu au survol */
+}
+
+span.menu_h img{
+  height: 30px;
+  width: 30px;  
+}
+/* Fin CSS de view_begin.php */
+
+/* Début CSS de view_end.php */
+.footer {
+  text-align: center;
+  padding: 5px;
+}
+
+.or-primaire-border {
+  border-bottom: 2px solid var(--or_primaire); /* Ajuste l'épaisseur et la couleur */
+}
+
+.text_footer_bas {
+  color: var(--blanc);
+}
+/* Fin CSS de view_end */
+
+/* Début CSS de view_connexion.php */
+body.body_co{
+  background: url("../img/FOND_DECRAN_UNIV_SPN.png") center/cover no-repeat fixed;
+  min-height: 100vh; /* Hauteur minimale de l'élément à 100% de la hauteur de la vue */
+  margin: 0; /* Supprimer la marge par défaut */
+  display: flex; /* Disposition flexible (Flexbox) pour aligner les éléments enfants */
+  align-items: center; /* Aligner les éléments enfants verticalement au centre */
+  justify-content: center; /* Aligner les éléments enfants horizontalement au centre */
+}
+
+#cont_co.container-fluid{
+  max-width: 600px;
+}
+
+div.form_co label {
+  color: var(--bleu_secondaire);
+  letter-spacing: 2px;
+  font-size: var(--police_label);
+  font-family: 'Montserrat';
+}
+
+div.form_co a {
+  letter-spacing: 1px;
+  font-size: var(--police_lien);
+  font-family: 'Montserrat';
+  display: block; 
+  margin-top: 10px;
+}
+
+div .form_co{
+  background-color: var(--blanc);
+  text-align: center;
+  border-radius: var(--bord_form);
+  padding: 25px;
+  width: 80%; /* Ajuster la largeur du formulaire */
+  height: auto; /* Ajuster automatiquement la hauteur en fonction du contenu */
+  margin: var(--marge_form); /* Ajouter une marge autour du formulaire */
+}
+
+.co {
+  color: var(--bleu_secondaire);
+  letter-spacing: 2px;
+  font-size: var(--police_titre);
+  font-family: 'WorkSans';
+  font-weight: bold;
+}
+
+.icone_co {
+  height: 30px;
+  width: 32px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 0; /* Aucune marge à droite de l'icône */
+}
+
+p.psswrd {
+  color: red;
+  font-family: 'Montserrat';
+  letter-spacing: 2px;
+  margin: 10px;
+  font-size: var(--police_label);
+}
+/* Fin CSS de view_connexion.php */
+
+/* Début CSS de view_profil.php */
+img.photo_profil{
+  max-width: 95%;
+  max-height: 95%;
+  margin: auto;
+  border-radius: var(--bord_form);
+  border :2px solid;
+  border-color: var(--or_secondaire);
+}
+
+.trait{
+  border :2px solid;
+  opacity: 100%;
+  border-color: var(--or_secondaire);
+}
+
+.gold{
+  color: var(--or_secondaire);
+  font-weight: bold;
+}
+
+.prenom_nom{
+  font-size: var(--police_titre);
+}
+
+.icone_profil{
+  height: 35px;
+  width: 37px;
+  margin: 3px;
+}
+
+div.row.text span{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+div.row.text span.hr{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* Fin CSS de view_profil.php */
+
+/* Début CSS de view_assistance */
+body div.container div.row .formulaire {
+  background-color: var(--blanc);
+  text-align: left;
+  border-radius: var(--bord_form);
+  padding: 25px;
+  margin: var(--marge_form);
+}
+
+.form-titre{
+  text-align: center;
+  color: var(--bleu_secondaire);
+  letter-spacing: 2px;
+  font-size: var(--police_titre);
+  font-family: 'WorkSans';
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+label{
+  letter-spacing: 2px;
+  color: var(--bleu_secondaire);
+  font-size: var(--police_label);
+  font-family: 'Montserrat';
+  margin-right: 2%;
+}
+/* Fin CSS de view_assistance */
+
+/* Début CSS view_home.php */
+a.home-badge{
+  font-family: "WorkSans";
+  font-size: var(--police_titre);
+  font-weight: bold;
+  color: var(--blanc);
+  text-decoration: none;
+}
+
+div.card{
+  background-color: var(--bleu_primaire);
+  padding-top: 3%;
+}
+
+div.card:hover {
+  background-color: var(--bleu_secondaire);
+  transform:scale(1.1);
+}
+img.logo-home{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+div.row .card{
+  margin: 5px auto;
+}
+
+.card {
+  position: relative;
+  min-width: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  transition: .5s;
+}
+
+#deco {
+  background-color: var(--or_primaire);
+  font-size: var(--police_titre);
+  margin-bottom: 20px;
+}
+/* Fin CSS de view_home.php */
+
+/* Début CSS view_annuaire */
+.texttr{
+  color: var(--or_secondaire);
+  font-size: var(--police_titre);
+  font-family: 'WorkSans';
+  font-weight: bold;
+}
+
+input.resr{
+  border-radius: var(--bord_btn);
+  height:33px;
+  margin-top: 25px;
+}
+
+div.row.marge{
+  margin: 5px auto;
+}
+
+p.ajt{
+  text-align: right;
+}
+
+.lien{
+  text-decoration: none;
+  color: var(--blanc);
+  font-size: var(--police_texte);
+}
+
+.lien:hover{
+  color: var(--or_secondaire);
+}
+
+.fonction{
+  color: var(--blanc);
+  font-size: var(--police_texte);
+}
+
+img.croix{
+  height: 25px;
+  width: 25px;
+}
+/* Fin CSS view_annuaire */
+
+/* Début CSS view_ajouter */
+.h1titre{
+  color : var(--blanc);
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+button.ajout{
+  margin: 20px;
+}
+/* Fin CSS view_ajouter */
+
+/* Début CSS view_modification */
+.b{
+  letter-spacing: 2px;
+  color: var(--bleu_secondaire);
+  font-size: var(--police_label);
+  font-family: 'Montserrat';
+  margin-right: 2%;
+}
+
+.c{
+  color: black;
+}
+
+.form-g{
+  margin-left: 20px;
+}
+/*Fin CSS view_modification */
+
+/* Début CSS view_departement */
+th.basic, td.basic{
+  background-color: var(--bleu_secondaire);
+  border-color: var(--bleu_primaire) !important;
+  border-style: solid !important;
+  border-width: 15px !important;
+  padding: 15px;
+}
+
+td.t{
+  width: 80%;
+}
+
+.tb{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gold2{
+  font-size: var(--police_texte);
+  color: var(--or_secondaire);
+  font-weight: bold;
+}
+
+.white2{
+  color: var(--blanc);
+  font-size: var(--police_texte);
+}
+/* Fin CSS view_departement */
+
+/*Début CSS view_list_dpt*/
+h2.deco2 {
+  font-size: var(--police_titre);
+  text-align: center;
+
+}
+
+div.card.ldp{
+  background-color: var(--bleu_primaire);
+  padding: 3%;
+}
+
+div.card.ldp:hover {
+  background-color: var(--bleu_secondaire);
+  transform:scale(1.1);
+}
+/*Fin CSS view_list_dpt*/
+
+/*Debut CSS view_consultation_heure*/
+body div.container div.row .formulaire2 {
+  background-color: var(--blanc);
+  text-align: left;
+  border-radius: var(--bord_form);
+  padding: 15px;
+  width: 270px;
+  height: 300px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.form-group2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+canvas#myChart {
+  max-height: 92%;
+  height: auto; /* Rend le graphique réactif en hauteur */
+  margin: 20px;
+}
+/*Fin CSS view_consultation_heure*/
+
+/*Debut CSS view_consultation_iut*/
+body div.container div.row .formulaire3 {
+  background-color: var(--blanc);
+  text-align: left;
+  border-radius: var(--bord_form);
+  padding: 15px;
+  width: 270px;
+  height: 460px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  position: relative;
+}
+
+.form-group3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+hr.form_hr{
+  color: var(--or_secondaire);
+  opacity: 1;
+  border: solid 1px;
+}
+
+div.canv{
+  width: 91%;
+}
+
+/* Fin CSS view_consultation_iut */
