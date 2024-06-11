@@ -1,0 +1,13 @@
+Di Evoluzion - Outil de pilotage pour l'IUT de Villetaneuse
+
+Membre de l'équipe : Thibaud BOULANGE, Camélia ANTOINE, Sophie DONG, Agash Anandasangar et Pauline VU
+
+Cet outil a été développé dans le cadre d'une SAE (Situation d'apprentissage et évaluation) pour la formation de BUT Informatique en 2ème année au 3ème semestre. C'est un outil de pilotage des heures enseignants qui est sous forme de site intranet dynamique.
+
+Vous trouverez toutes les informations nécessaires à la production finale sur notre  GitLab: 
+
+https://gitlab.sorbonne-paris-nord.fr/12103346/the-evolution/-/tree/main?ref_type=heads 
+
+Informations complémentaires (cahier des charges, etc.) sur notre drive :
+
+https://drive.google.com/drive/folders/1Lfv4IfA93pprPU3EkkZwYp8ivE6qEhQb 
